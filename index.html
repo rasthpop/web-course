@@ -3,12 +3,15 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./styles.css" />
 	<title>LeafyPod</title>
 </head>
 
 <body>
 	<section class="title-sec">
-
+		<img class="title-product" alt="LeafyPod" src="./assets/title-product.png"/>
+		
+		<div class="title-nav">
 		<header>
 		<img alt="Logo" src="./assets/Logo.svg" class="logo" />
 			<nav class="header-nav">
@@ -21,9 +24,12 @@
 		<nav class="title-info">
 			<h1>Інтелектуальний вазон з автополивом </h1>
 			<p>LeafyPod — це інтелектуальний вазон, який автоматизує догляд за рослинами, створюючи ідеальні умови завдяки системі автополиву та датчикам.</p>
-			<a>Найкраща пропозиція на Kickstarter</a>
+			<a class="action-button" href="www.figma.com/exit?url=https%3A%2F%2Fwww.kickstarter.com%2Fprojects%2Fleafypod%2Fself-watering-smart-planter%2Fdescription%3Fcategory_id%3DQ2F0ZWdvcnktNTI%26ref%3Dsection-homepage-projectcollection-20-staff-picks-newest">
+				Найкраща пропозиція на Kickstarter
+			</a>
 		</nav>
-		<img class="title-product" alt="LeafyPod" src="./assets/title-product.png"/>
+
+		</div>
 	</section>
 
 	<section class="solutions-sec">
@@ -69,19 +75,21 @@
 	<section class="howitworks-sec">
 		<h2>Рослини в’януть? Немає часу на догляд? Ми вирішимо це!</h2>
 		<div class="howitworks-layout">
-			<h3>Як це працює</h3>
-			<ol>
-				<li>Заповніть резервуар водою</li>
-				<li>Виберіть режим автополиву</li>
-				<li>Насолоджуйтесь здоровими рослинами!</li>
-			</ol>
+			<div>
+				<h3>Як це працює</h3>
+				<ol class="howitworks-list">
+					<li class="element">Заповніть резервуар водою</li>
+					<li>Виберіть режим автополиву</li>
+					<li>Насолоджуйтесь здоровими рослинами!</li>
+				</ol>
+			</div>
+			<video class="" autoplay muted loop><source src="./assets/video-solutions.mp4" type="video/mp4"></video>
 		</div>
-		<video class="" autoplay muted loop><source src="./assets/video-solutions.mp4" type="video/mp4"></video>
 	</section>
 
 	<section class="features-sec">
 		<h2>Особливості продукту</h2>
-		<div >
+		<div class="features-grid">
 			<div class="card">
 				<div class="card-header">
 					<span>Тривале використання</span> 
@@ -137,7 +145,8 @@
 	<section class="mobapp-sec">
 		<h2>Функції мобільного додатку</h2>
 		<div class="mobapp-layout">
-			<ol>
+			<div>
+			<ol class="howitworks-list">
 				<li>
 					<span class="card-title">Управління через смартфон</span>
 					<span class="card-span">Додаток дозволяє легко контролювати стан рослин і процес поливу прямо з вашого телефону.</span>
@@ -158,6 +167,7 @@
 					<span class="card-span">Режими поліву графік графіка на основі потреб рослини: полив створюється за низької вологості обгрунтовано, а AI оптимізує процес.</span>
 				</li>
 			</ol>
+			</div>
 			<video autoplay muted loop> <source src="./assets/video-app.mp4" type="video/mp4"></video>
 		</div>
 	</section>
@@ -200,7 +210,7 @@
 		<div class="feedback-row">
 			
 			<div class="card"> 
-				<div class="card-header"><img/> <span class="card-title">Діана</span></div>
+				<div class="card-header"><img src="./assets/feedback-user2.png" class="user-image"/> <span class="card-title">Діана</span></div>
 				<article class="card-desc">
 					LeafyPod — ідеальне рішення для догляду за рослинами без зайвих турбот. Він самостійно контролює полив, 
 					освітлення і температуру, створюючи ідеальні умови. Ваші рослини завжди будуть доглянуті, навіть коли ви 
@@ -209,7 +219,7 @@
 			</div>
 
 			<div class="card">
-				<div class="card-header"><img/> <span class="card-title">Арсен</span></div>
+				<div class="card-header"><img src="./assets/feedback-user3.png" class="user-image"/> <span class="card-title">Арсен</span></div>
 				<article class="card-desc">
 					Це чудово підходить для новачків, які тільки починають вирішувати проблеми, з якими ми стикаємося як 
 					початківці доглядачі рослин, наприклад, коли потрібно поливати рослину, чи отримує вона достатньо світла,
@@ -217,8 +227,8 @@
 				</article>
 			</div>
 			
-			<div class="card">
-				<div class="card-header"><img/> <span class="card-title">Софія</span></div>
+			<div class="card center-card">
+				<div class="card-header"><img src="./assets/feedback-user1.png" class="user-image"/> <span class="card-title">Софія</span></div>
 				<article class="card-desc">
 					Цей вазон також ідеально підходить для тих, хто подорожує і не хоче хвилюватися, як поливати рослини або 
 					в якому стані вони будуть, коли ви повернетеся додому. Завдяки цьому горщику, ваші рослини будуть доглянуті  

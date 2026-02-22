@@ -546,6 +546,8 @@ footer {
 
     .complectation-sec {
         padding-left: 6rem;
+        overflow: show;
+        position: static;
     }
 
     .image-card-xl {
@@ -558,7 +560,11 @@ footer {
     }
 
     .complectation-leaf {
-        display: none;
+        top: 200%;
+        left: -4%;
+        overflow: visible;
+
+        transform: rotate(7deg);
     }
 
     .feedback-row {
@@ -577,6 +583,9 @@ footer {
 
 
 @media (max-width: 1023px) {
+    h1, .title-nav{
+        z-index: 9999;
+    }
 
 
     .title-nav a:not(.action-button) {
